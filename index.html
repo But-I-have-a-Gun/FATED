@@ -45,6 +45,7 @@
     .hero {
       text-align: center;
       margin-bottom: 60px;
+      transition: transform 0.5s ease;
     }
 
     .hero img {
@@ -131,23 +132,24 @@
   </div>
 
   <script>
-    const heroSection = document.getElementById('hero');
-    const duoSection = document.getElementById('duo');
+    const hero = document.getElementById('hero');
+    const duo = document.getElementById('duo');
     let duoRevealed = false;
 
-    window.addEventListener('scroll', () => {
-      const rect = heroSection.getBoundingClientRect();
-
-      if (rect.bottom < 100) {
-        heroSection.classList.add('scaled');
-        if (!duoRevealed) {
-          duoSection.classList.add('visible');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting && !duoRevealed) {
+          hero.classList.add('scaled');
+          duo.classList.add('visible');
           duoRevealed = true;
+        } else if (entry.isIntersecting) {
+          hero.classList.remove('scaled');
         }
-      } else {
-        heroSection.classList.remove('scaled');
-      }
-    });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(hero);
   </script>
 
 </body>
