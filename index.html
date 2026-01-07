@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nightfall: The Infection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header {
+      background: url('horror-cityscape.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4em;
+      color: #ff3c00;
+      text-shadow: 2px 2px 10px #000;
+    }
+    header p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin-top: 1em;
+    }
+    nav {
+      background: #1a1a1a;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 4em 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+    .feature {
+      flex: 1 1 45%;
+      background: #1a1a1a;
+      padding: 1.5em;
+      border-radius: 8px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3em;
+    }
+    .cta button {
+      background: #ff3c00;
+      color: #fff;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nightfall: The Infection</h1>
+    <p>Survive the night. Hunt or be hunted in this asymmetrical horror experience.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+  </nav>
+
+  <section id="about">
+    <h2>About the Game</h2>
+    <p>
+      In a city overrun by the infected, survivors must scavenge, craft, and fight to survive. But beware—when night falls, the real horror begins. One player becomes the Night Stalker, a powerful predator hunting the rest. Will you survive until dawn?
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Game Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Asymmetrical Multiplayer</h3>
+        <p>Play as a survivor or the Night Stalker. Each role offers unique gameplay and abilities.</p>
+      </div>
+      <div class="feature">
+        <h3>Dynamic Day-Night Cycle</h3>
+        <p>Daytime is for scavenging. Nighttime is for terror. Adapt or perish.</p>
+      </div>
+      <div class="feature">
+        <h3>Parkour Movement</h3>
+        <p>Traverse rooftops and alleys with fluid parkour mechanics to escape danger.</p>
+      </div>
+      <div class="feature">
+        <h3>Crafting & Survival</h3>
+        <p>Gather resources to craft weapons, traps, and tools to stay alive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="cta">
+    <h2>Ready to Face the Night?</h2>
+    <button>Download Now</button>
+  </section>
+
+</body>
+</html>
