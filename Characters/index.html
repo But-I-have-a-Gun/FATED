@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FATED - Characters</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 20px 60px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #ff3c3c;
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      color: #ff3c3c;
+      margin: 60px 0 30px;
+      border-bottom: 2px solid #ff3c3c;
+      padding-bottom: 10px;
+    }
+
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .character-card {
+      background-color: #1a1a1a;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 60, 60, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .character-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(255, 60, 60, 0.35);
+    }
+
+    .character-card img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .character-card h3 {
+      margin: 0;
+      font-size: 1.4em;
+      color: #f0f0f0;
+    }
+
+    /* Back Button */
+    .back-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+    }
+
+    .back-section a {
+      background-color: #1a1a1a;
+      color: #ff3c3c;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 14px 24px;
+      border-radius: 999px;
+      border: 2px solid #ff3c3c;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-section a:hover {
+      background-color: #ff3c3c;
+      color: #0d0d0d;
+      transform: translateX(-4px);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.4em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      .character-card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Characters</h1>
+
+    <!-- KILLERS -->
+    <h2>Killers</h2>
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="BOM">
+        <h3>BOM</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Doombringer">
+        <h3>Doombringer</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Null">
+        <h3>Null</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Mr. Retro">
+        <h3>Mr. Retro</h3>
+      </div>
+    </div>
+
+    <!-- SURVIVORS -->
+    <h2>Survivors</h2>
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Support">
+        <h3>Support</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Sentinal">
+        <h3>Sentinal</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Robloxian">
+        <h3>Robloxian</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Cashier">
+        <h3>Cashier</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Pencil">
+        <h3>Pencil</h3>
+      </div>
+
+      <div class="character-card">
+        <img src="https://raw.githubusercontent.com/But-I-have-a-Gun/FATED/refs/heads/main/photos/Placeholder%20250x250%20px.webp" alt="Skybox">
+        <h3>Skybox</h3>
+      </div>
+    </div>
+
+    <div class="back-section">
+      <a href="../index.html">‹ Back to Home</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
