@@ -34,6 +34,7 @@
       padding-bottom: 10px;
     }
 
+    /* CHARACTER GRID */
     .character-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -69,28 +70,49 @@
       color: #f0f0f0;
     }
 
-    /* Back Button */
-    .back-section {
+    /* NAVIGATION BUTTONS */
+    .navigation-buttons {
+      max-width: 900px;
+      margin: 80px auto 0;
+      padding: 0 40px;
       display: flex;
-      justify-content: center;
-      margin-top: 80px;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
-    .back-section a {
+    .navigation-buttons a {
       background-color: #1a1a1a;
       color: #ff3c3c;
       text-decoration: none;
       font-weight: bold;
-      padding: 14px 24px;
+      padding: 14px 26px;
       border-radius: 999px;
       border: 2px solid #ff3c3c;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
       transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
-    .back-section a:hover {
+    .navigation-buttons a:hover {
       background-color: #ff3c3c;
       color: #0d0d0d;
+    }
+
+    .navigation-buttons .back-btn:hover {
       transform: translateX(-4px);
+    }
+
+    .navigation-buttons .next-btn:hover {
+      transform: translateX(4px);
+    }
+
+    .navigation-buttons .arrow {
+      font-size: 1.4em;
+      font-weight: bold;
+      line-height: 1;
     }
 
     @media (max-width: 600px) {
@@ -105,6 +127,10 @@
       .character-card img {
         width: 100%;
         height: auto;
+      }
+
+      .navigation-buttons {
+        justify-content: center;
       }
     }
   </style>
@@ -173,8 +199,16 @@
       </div>
     </div>
 
-    <div class="back-section">
-      <a href="../index.html">‹ Back to Home</a>
+    <!-- NAVIGATION -->
+    <div class="navigation-buttons">
+      <a class="back-btn" href="/Home/">
+        ‹ Back to Home
+      </a>
+
+      <a class="next-btn" href="/Credits/">
+        Next Section: Credits 
+        <span class="arrow">›</span>
+      </a>
     </div>
 
   </div>
